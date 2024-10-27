@@ -1,0 +1,16 @@
+.form {
+  max-width: 600px;
+  margin: 12px auto;
+}
+input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.crud-btn {
+  border: none;
+  background: #000;
+  padding: 8px 24px;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}

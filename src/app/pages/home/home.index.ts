@@ -13,6 +13,7 @@ export default class extends mainViewClass {
     const headingText = await getHeadingText();
     const isLoggedIn = await checkLogin();
     let buttonsHTML = "";
+    let crudBtn = `<router-link href="/crud">crud</router-link>`;
     if (isLoggedIn) {
       buttonsHTML = `
       <router-link href="/logout">Logout</router-link>
@@ -42,6 +43,7 @@ export default class extends mainViewClass {
           <!-- <button onclick="showAlert()">Show alert</button> -->
           <div class="btn-group">
             ${buttonsHTML}
+            ${crudBtn}
           </div>
         </main>
 

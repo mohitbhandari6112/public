@@ -5,6 +5,7 @@ import homeIndex from "../pages/home/home.index.ts";
 import noPageFoundIndex from "../pages/noPageFound/noPageFound.index.ts";
 import { login } from "../pages/user/login.example.ts";
 import { logout } from "../pages/user/logout.example.ts";
+import { crud } from "../pages/crud/crud.ts";
 import { register } from "../pages/user/register.example.ts";
 
 type RouteParams = {
@@ -51,19 +52,25 @@ const routes: RouteParams[] = [
     path: "/example",
     linkLabel: "Example",
     content: create,
-    isAuthenticated: true
+    isAuthenticated: true,
   },
   {
     path: "/phonebook",
     linkLabel: "Phonebook",
     content: phonebook,
-    isAuthenticated: true
+    isAuthenticated: true,
+  },
+  {
+    path: "/crud",
+    linkLabel: "Crud",
+    content: crud,
+    isAuthenticated: true,
   },
   {
     path: "/example-list",
     linkLabel: "Example",
     content: list,
-    isAuthenticated: true
+    isAuthenticated: true,
   },
   {
     path: "/404",
